@@ -10,7 +10,7 @@
 //   Include changing where you start
 //   Include victory if 8 ball has been pocketed after all team's balls are pocketed
 //   Include another turn if a person's ball has been pocketed
-//   Improve Velocity
+//   Improve Velocity & Fisics
 
 import fisica.*;
 

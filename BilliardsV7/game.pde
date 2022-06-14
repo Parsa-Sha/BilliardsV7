@@ -4,7 +4,7 @@ boolean turn; // False is first player, true is second player.
 boolean solidStripe; // True is first player solid, second player stripe. False is reverse.
 boolean[] allBallsBut8 = new boolean[2]; // True checks if player has all balls in except 8, index 0 = player 1
 boolean anotherTurn; // Check if any of the player's balls have been pocketed.
-boolean teamDecided = false;
+boolean teamDecided = false; // Checks if the first ball has been pocketed
 void game() {
   background(200);
   image(table, width/2-table.width/2, height-240-table.height/2);

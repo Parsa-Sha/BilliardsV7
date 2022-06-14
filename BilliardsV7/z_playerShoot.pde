@@ -30,7 +30,13 @@ void playerShoot() { // We will get back to the shooting code, don't worry about
   if (checkVelRest() < 1) ellipse(30, 30, 26, 26);
   stroke(255 * int(turn), 0, 255 * int(!turn));
   ellipse(60, 30, 26, 26);
-
+  stroke(int(teamDecided)*255);
+  ellipse(90, 30, 26, 26);
+  if (teamDecided) {
+    stroke(int(solidStripe)*255, 0, int(!solidStripe)*255);
+    ellipse(120, 30, 26, 26);
+  }
+  
   if (checkVelRest() < 1 && hasShot) { // When shot is over
     hasShot = false;
     if (anotherTurn) anotherTurn = false;
