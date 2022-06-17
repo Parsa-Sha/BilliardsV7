@@ -39,6 +39,7 @@ boolean newGame = true;
 PImage table;
 PImage stick;
 PImage[] ballImages = new PImage[16];
+PImage bg;
 
 PlayerBall pb = null;
 
@@ -51,6 +52,7 @@ void setup() {
   
   table = loadImage("images\\EightBallTable.png");
   stick = loadImage("images\\poolStick.png");
+  bg = loadImage("images\\introImage.png");
   ballImages[0] = loadImage("balls\\cueball.png");
   ballImages[1] = loadImage("balls\\1ball.png");
   ballImages[2] = loadImage("balls\\2ball.png");

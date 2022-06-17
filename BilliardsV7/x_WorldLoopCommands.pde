@@ -12,7 +12,6 @@ float checkVelRest() {
   return totalVelocity;
 }
 
-
 void calmVel() {
   fBodyList = world.getBodies();
   for (int i = 0; i < fBodyList.size(); i++) {
