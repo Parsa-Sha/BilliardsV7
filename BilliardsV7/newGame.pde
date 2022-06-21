@@ -32,7 +32,7 @@ void newGame() {
       selectionCleared = 0; // Place id into index, then reset
     }
   }
-  
+
   myBalls = new Ball[16];
   world = new FWorld();
   world.setGravity(0, 0);
@@ -47,7 +47,7 @@ void newGame() {
   pb.setGrabbable(false);
   myBalls[0] = pb;
   world.add(pb);
-  
+
   // Create all six bumpers
   FBox topLeft = new FBox(370, 10);
   FBox topRight = new FBox(370, 10);
@@ -55,7 +55,7 @@ void newGame() {
   FBox bottomRight = new FBox(370, 10);
   FBox left = new FBox(10, 325);
   FBox right = new FBox(10, 325);
-  
+
   // Set position of bumpers
   topLeft.setPosition(270, 100);
   topRight.setPosition(690, 100);
@@ -63,7 +63,7 @@ void newGame() {
   bottomRight.setPosition(690, 500);
   left.setPosition(45, 298);
   right.setPosition(915, 298);
-  
+
   // Make sure they don't move
   topLeft.setStatic(true);
   topRight.setStatic(true);
@@ -71,7 +71,7 @@ void newGame() {
   bottomRight.setStatic(true);
   left.setStatic(true);
   right.setStatic(true);
-  
+
   // Make sure they can't be grabbed
   topLeft.setGrabbable(false);
   topRight.setGrabbable(false);
@@ -79,7 +79,7 @@ void newGame() {
   bottomRight.setGrabbable(false);
   left.setGrabbable(false);
   right.setGrabbable(false);
-  
+
   // Set noStroke and noFill
   topLeft.setNoFill();
   topRight.setNoFill();
@@ -102,7 +102,7 @@ void newGame() {
   bottomRight.setVelocity(0, 0);
   left.setVelocity(0, 0);
   right.setVelocity(0, 0);
-  
+
   world.add(topLeft);
   world.add(topRight);
   world.add(bottomLeft);
@@ -112,13 +112,13 @@ void newGame() {
 
   /*
   rect(85, 95, 370, 10); // Testing
-  rect(505, 95, 370, 10);
-  rect(85, 495, 370, 10);
-  rect(505, 495, 370, 10);
-  rect(40, 135, 10, 325);
-  rect(910, 135, 10, 325);
-  ellipse(60, 115, 26, 26);
-  */
+   rect(505, 95, 370, 10);
+   rect(85, 495, 370, 10);
+   rect(505, 495, 370, 10);
+   rect(40, 135, 10, 325);
+   rect(910, 135, 10, 325);
+   ellipse(60, 115, 26, 26);
+   */
 
   int bpi = 1; // Ball placed index, used to refrence which ball should be placed where
   for (int i = 0; i < 5; i++) {

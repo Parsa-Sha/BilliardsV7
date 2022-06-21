@@ -91,6 +91,7 @@ void game() {
   }
 
   if (gameWon == 0 || keyPressed && key=='5') mode = GAMEWON;
+  if (keyPressed && key == '6') mode = GAMEOVER;
 
   switch(gameState) { // Potential for V4 with proper game rules, two player, and proper velocity input
   case PLAYERBEGIN:
