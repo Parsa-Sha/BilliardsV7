@@ -15,21 +15,20 @@ void game() {
 
   /*
   rect(85, 95, 370, 10); // Testing locations of all walls and holes
-   rect(505, 95, 370, 10);
-   rect(85, 495, 370, 10);
-   rect(505, 495, 370, 10);
-   rect(40, 135, 10, 325);
-   rect(910, 135, 10, 325);
-   ellipse(60, 115, 26, 26);
-   
-   noStroke();
-   circle(45, 97, 28*2);
-   circle(45, 503, 28*2);
-   circle(915, 97, 28*2);
-   circle(915, 503, 28*2);
-   circle(480, 78, 28*2);
-   circle(480, 521, 28*2);
-   */
+  rect(505, 95, 370, 10);
+  rect(85, 495, 370, 10);
+  rect(505, 495, 370, 10);
+  rect(40, 135, 10, 325);
+  rect(910, 135, 10, 325);
+
+  noStroke();
+  circle(45, 97, 28*2);
+  circle(45, 503, 28*2);
+  circle(915, 97, 28*2);
+  circle(915, 503, 28*2);
+  circle(480, 78, 28*2);
+  circle(480, 521, 28*2);
+  */
 
   for (int i = 1; i < myBalls.length; i++) {
     if (myBalls[i] != null) {

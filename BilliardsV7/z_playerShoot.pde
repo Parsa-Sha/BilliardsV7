@@ -9,7 +9,8 @@ boolean contactMade = false;
 
 void playerShoot() { // We will get back to the shooting code, don't worry about this;
   float firstContact = firstContact();
-
+  pb.setGrabbable(false);
+  
   if (velcel) {
     velcel = false;
     mousePressed = false;
